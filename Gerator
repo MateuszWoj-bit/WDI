@@ -1,0 +1,18 @@
+import random
+
+liczba = random.randint(1, 100)
+# print("Wylosowana liczba:", liczba)
+
+for i in range(9999):
+    odp = input("Jaką liczbę od 1 do 100 mam na myśli? ")
+    print("Podałeś liczbę: ", odp)
+    
+    if liczba < int(odp):
+        print("Za duża liczba")
+    elif liczba > int(odp):   
+        print("Za mała liczba")
+    else:
+        print("Brawo, mój przyjacielu")
+        import time
+        time.sleep(5)
+        break
