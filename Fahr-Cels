@@ -1,0 +1,11 @@
+tFahr = input("Temperatura w st. Fahrenheita:")
+tFahr = float(tFahr)
+tCels = 5/9.0 * (tFahr-32)
+print("Temperatura w st. Celsjusza:\n", tCels)
+
+tCels = input("Temperatura w st. Celsjusza:")
+tCels = float(tCels)
+tFahr = tCels *9/5+32
+print("Temperatura w st. Fahrenheita:\n", tFahr)
+import time
+time.sleep(15)
